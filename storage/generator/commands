@@ -1,0 +1,3 @@
+php artisan infyom:scaffold QuestionCategory --fieldsFile=C:\laragon\www\eunacom\storage\generator\question_categories_table.json
+
+php artisan infyom:scaffold Question --fieldsFile=C:\laragon\www\eunacom\storage\generator\questions.json

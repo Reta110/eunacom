@@ -1,0 +1,102 @@
+[
+  {
+    "name": "id",
+    "dbType": "increments",
+    "htmlType": "",
+    "validations": "",
+    "searchable": false,
+    "fillable": false,
+    "primary": true,
+    "inForm": false,
+    "inIndex": false
+  },
+    {
+    "name": "code",
+    "dbType": "integer",
+    "htmlType": "number",
+    "validations": "",
+    "searchable": true,
+    "primary": true,
+    "inForm": false,
+    "inIndex": true
+  },
+   {
+    "name": "title",
+    "dbType": "longText",
+    "htmlType": "textarea",
+    "inForm": true,
+    "inIndex": false,
+    "validations": "required"
+  },
+  {
+    "name": "options",
+    "dbType": "string",
+    "htmlType": "text",
+    "searchable": false,
+    "inForm": true,
+    "inIndex": true,
+    "validations": "required"
+  },
+  {
+    "name": "positive_feddback",
+    "dbType": "longText",
+    "htmlType": "textarea",
+    "inForm": true,
+    "inIndex": false,
+    "validations": "required"
+  },
+  {
+    "name": "feddback_positive",
+    "dbType": "longText",
+    "htmlType": "textarea",
+    "inForm": true,
+    "inIndex": false,
+    "validations": "required"
+  },
+   {
+    "name": "feddback_wrong",
+    "dbType": "longText",
+    "htmlType": "textarea",
+    "inForm": true,
+    "inIndex": false,
+    "validations": "required"
+  },
+   {
+    "name": "status",
+    "dbType": "string",
+    "htmlType": "select,Inactive:0,Active:1,Pending:2,Rejected:3,Deleted:4",
+    "searchable": false,
+    "inForm": true,
+    "inIndex": false,
+    "validations": "required"
+  },
+  {
+    "name": "category_id",
+    "dbType": "integer:unsigned:foreign,notice_categories,id",
+    "htmlType": "text",
+    "relation": "mt1,QuestionCategory,category_id,id",
+    "inIndex": false
+  },
+  {
+    "name": "created_at",
+    "dbType": "timestamp",
+    "htmlType": "",
+    "validations": "",
+    "searchable": false,
+    "fillable": false,
+    "primary": false,
+    "inForm": false,
+    "inIndex": false
+  },
+  {
+    "name": "updated_at",
+    "dbType": "timestamp",
+    "htmlType": "",
+    "validations": "",
+    "searchable": false,
+    "fillable": false,
+    "primary": false,
+    "inForm": false,
+    "inIndex": false
+  }
+]
